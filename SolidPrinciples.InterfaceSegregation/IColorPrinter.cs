@@ -2,6 +2,6 @@
 {
     public interface IColorPrinter
     {
-        void PrintColor(string color);
+        void PrintColor(string document);
     }
 }
