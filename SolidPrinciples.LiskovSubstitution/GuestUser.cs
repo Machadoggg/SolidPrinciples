@@ -4,12 +4,12 @@
     {
         public override void AccessDashboard()
         {
-            Console.WriteLine("Guest user accessing limited dashboard");
+            Console.WriteLine("\tGuest user accessing limited dashboard");
         }
 
         public override void AccessAdminPanel()
         {
-            throw new InvalidOperationException("Guest user does not have access to the admin panel");
+            throw new InvalidOperationException("\tGuest user does not have access to the admin panel");
         }
     }
 }

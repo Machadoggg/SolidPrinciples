@@ -5,12 +5,12 @@
 
         public virtual void AccessDashboard()
         {
-            Console.WriteLine("User accessing dashboard");
+            Console.WriteLine("\tUser accessing dashboard");
         }
 
         public virtual void AccessAdminPanel()
         {
-            throw new InvalidOperationException("User does not have access to the admin panel");
+            throw new InvalidOperationException("\tUser does not have access to the admin panel");
         }
     }
 }

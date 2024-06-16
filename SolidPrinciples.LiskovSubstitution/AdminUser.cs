@@ -4,7 +4,7 @@
     {
         public override void AccessAdminPanel()
         {
-            Console.WriteLine("Admin user accessing admin panel");
+            Console.WriteLine("\tAdmin user accessing admin panel");
         }
     }
 }
