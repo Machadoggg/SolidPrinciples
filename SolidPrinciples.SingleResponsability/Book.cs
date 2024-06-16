@@ -30,24 +30,24 @@
 
     public class Book
     {
-        public string Title { get; set; }
-        public string Author { get; set; }
-        public string ISBN { get; set; }
+        public string Title { get; set; } = default!;
+        public string Author { get; set; } = default!;
+        public string ISBN { get; set; } = default!;
     }
 
     public class BookRepository
     {
-        public void Save()
+        public void Save(string title, string author, string isbn)
         {
-            // Code for save the book in DB
+            Console.WriteLine($"The book {title} of the author {author} with ISBN #: {isbn} Save successfully!");
         }
     }
 
     public class BookPrinter
     {
-        public void Print()
+        public void Print(string title, string author, string isbn)
         {
-            // Code for print book details
+            Console.WriteLine($"The book {title} of the author {author} with ISBN #: {isbn} Print successfully!");
         }
     }
 }
